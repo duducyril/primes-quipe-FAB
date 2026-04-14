@@ -1,4 +1,4 @@
-# primes-quipe-FAB
+# primes-equipe-FAB
 Application mobile de démonstration pour le suivi des primes d'équipe.
 
 ## Version HTML
