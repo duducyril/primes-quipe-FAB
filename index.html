@@ -21,14 +21,14 @@
             members.forEach(member => {
                 const card = document.createElement('div');
                 card.className = 'member-card';
-                const total = member.bonuses.reduce((acc, bonus) => acc + bonus.amount, 0);
-                card.innerHTML = `<h2>${member.name}</h2><p>Total: $${total.toFixed(2)}</p>`;
+                card.innerHTML = `<h2>${member.name}</h2>`;
                 const bonusHistory = document.createElement('div');
                 bonusHistory.innerHTML = '<h3>Bonus History</h3>' + member.bonuses.map(b => `<p>$${b.amount} - ${b.comment}</p>`).join('');
                 card.appendChild(bonusHistory);
                 const commentInput = document.createElement('input');
                 commentInput.placeholder = 'Add a comment';
-                commentInput.id = `${member.name.replace(' ', '_')}_comment`;
+                commentInput.id = \\`${member.name.replace(' ', '_')}_comment\
+                `;
                 const bonusInput = document.createElement('input');
                 bonusInput.placeholder = 'Add bonus amount';
                 const addButton = document.createElement('button');
